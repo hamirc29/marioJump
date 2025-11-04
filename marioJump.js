@@ -13,6 +13,16 @@ var score = 0, lives = 7;
 var groundY;
 var jumpTopY;
 
+
+function preload()
+{
+    play = loadImage("mario.png");
+  coin = loadImage("mariocoin.png");
+  bullet = loadImage("bulletbill.png");
+  special = loadImage("bombomb.png");
+  regen = loadImage("upmushroom.png");
+}
+
 function setup()
 {
     let canvas = createCanvas(windowWidth, windowHeight);
@@ -49,11 +59,7 @@ function setup()
   rVx = 10 * (width / 900.0);
   rVy = 10 * (height / 700.0);
 
-  play = loadImage("mario.png");
-  coin = loadImage("mariocoin.png");
-  bullet = loadImage("bulletbill.png");
-  special = loadImage("bombomb.png");
-  regen = loadImage("upmushroom.png");
+
 }
 
 function draw()

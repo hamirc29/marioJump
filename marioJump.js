@@ -15,7 +15,7 @@ var jumpTopY;
 
 function setup()
 {
-    createCanvas(windowWidth, windowHeight)
+    createCanvas(windowWidth, windowHeight);
   frameRate(60);
 
   groundY = height - height / 6;

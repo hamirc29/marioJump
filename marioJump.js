@@ -15,7 +15,9 @@ var jumpTopY;
 
 function setup()
 {
-    createCanvas(windowWidth, windowHeight);
+    let canvas = createCanvas(windowWidth, windowHeight);
+    canvas.elt.tabIndex = "0";
+    canvas.elt.focus();
   frameRate(60);
 
   groundY = height - height / 6;
@@ -76,7 +78,7 @@ function draw()
     pVy = 0;
   }
 
-  if (!keyPressed)
+  if (!keyIsPressed)
   {
     pVx = 0;
   }
@@ -231,17 +233,17 @@ function draw()
 
 function keyPressed()
 {  
-    if (keyCode == UP && pY >= groundY)
+    if (keyCode == UP_ARROW && pY >= groundY)
     {
       pVy = -15 * (height / 700.0);
     }
 
-    if (keyCode == LEFT)
+    if (keyCode == LEFT_ARROW)
     {
       pVx = -12 * (width / 900.0);
     }
 
-    if (keyCode == RIGHT)
+    if (keyCode == RIGHT_ARROW)
     {
       pVx = 12 * (width / 900.0);
     }

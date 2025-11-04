@@ -106,25 +106,25 @@ function draw()
   textSize(25 * (height / 700.0));
   text("Lives: " + lives, width / 16, height / 6);
 
-  float playerCenterX = pX;
-  float playerCenterY = pY - pSize / 2;
+  var playerCenterX = pX;
+  var playerCenterY = pY - pSize / 2;
 
-  float coinCenterX = cX + cSize / 2;
-  float coinCenterY = cY + cSize / 2;
+  var coinCenterX = cX + cSize / 2;
+  var coinCenterY = cY + cSize / 2;
 
-  float bulletCenterX = bX + bSize / 2;
-  float bulletCenterY = bY + bSize / 2;
+  var bulletCenterX = bX + bSize / 2;
+  var bulletCenterY = bY + bSize / 2;
 
-  float bombCenterX = sX + sSize / 2;
-  float bombCenterY = sY + sSize / 2;
+  var bombCenterX = sX + sSize / 2;
+  var bombCenterY = sY + sSize / 2;
 
-  float regenCenterX = rX + rSize / 2;
-  float regenCenterY = rY + rSize / 2;
+  var regenCenterX = rX + rSize / 2;
+  var regenCenterY = rY + rSize / 2;
 
-  float distC = dist(playerCenterX, playerCenterY, coinCenterX, coinCenterY);
-  float distB = dist(playerCenterX, playerCenterY, bulletCenterX, bulletCenterY);
-  float distS = dist(playerCenterX, playerCenterY, bombCenterX, bombCenterY);
-  float distR = dist(playerCenterX, playerCenterY, regenCenterX, regenCenterY);
+  var distC = dist(playerCenterX, playerCenterY, coinCenterX, coinCenterY);
+  var distB = dist(playerCenterX, playerCenterY, bulletCenterX, bulletCenterY);
+  var distS = dist(playerCenterX, playerCenterY, bombCenterX, bombCenterY);
+  var distR = dist(playerCenterX, playerCenterY, regenCenterX, regenCenterY);
 
   if (distC < (pSize + cSize) / 2)
   {

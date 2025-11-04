@@ -230,9 +230,7 @@ function draw()
 }
 
 function keyPressed()
-{
-  if (key == CODED)
-  {
+{  
     if (keyCode == UP && pY >= groundY)
     {
       pVy = -15 * (height / 700.0);
@@ -247,5 +245,4 @@ function keyPressed()
     {
       pVx = 12 * (width / 900.0);
     }
-  }
 }

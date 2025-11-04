@@ -26,7 +26,7 @@ function preload()
 function setup()
 {
     let canvas = createCanvas(windowWidth, windowHeight);
-    canvas.elt.tabIndex = "0";
+    canvas.elt.tabIndex = '0';
     canvas.elt.focus();
   frameRate(60);
 
@@ -242,15 +242,17 @@ function keyPressed()
     if (keyCode == UP_ARROW && pY >= groundY)
     {
       pVy = -15 * (height / 700.0);
-    }
+    } else
 
     if (keyCode == LEFT_ARROW)
     {
       pVx = -12 * (width / 900.0);
-    }
+    }else
 
     if (keyCode == RIGHT_ARROW)
     {
       pVx = 12 * (width / 900.0);
     }
+
+    return false;
 }
